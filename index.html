@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Comment Remover</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="display-4">Python Comment Remover</h1>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="pythonCode">Enter Python Code:</label>
+                        <textarea class="form-control" id="pythonCode" rows="10"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="removeCommentsBtn">Remove Comments</button>
+                </div>
+                <!-- Add this button in the HTML section -->
+                <div class="col-md-6 hidden" id="codeWithoutCommentsSection">
+                    <label for="output">Code Without Comments:</label>
+                    <pre id="output" class="border p-3"></pre>
+                    <button class="btn btn-secondary" id="copyCodeBtn">Copy Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
